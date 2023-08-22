@@ -2,6 +2,8 @@ import { ActionFunction, LoaderArgs, LoaderFunction, json, redirect } from '@rem
 import { createServerClient } from '@supabase/auth-helpers-remix'
 import { useActionData, useLoaderData } from 'react-router'
 
+import OrcatsLogo from '~/assets/OrcatsLogo.png'
+
 export const action: ActionFunction = async ({ request }) => {
   const response = new Response()
 
@@ -40,8 +42,12 @@ export default function Index() {
   const actionData = useActionData()
 
   return (
-    <div>
-      <h1 className="text-2xl w-full text-center pt-10">Welcome to Project Name!</h1>
+    <div className="mx-auto w-1/2 max-w-[600px] max-lg:w-5/6 font-['owners-xwide']">
+      <img src={OrcatsLogo} alt="A logo depicting a cat and orca hybrid" />
+      <h1 className="font-bold text-center text-6xl">orcats</h1>
+      <ul className="text-center my-4">
+        <li>USAU Washington Sectionals - September 9-10, 2023</li>
+      </ul>
     </div>
   );
 }

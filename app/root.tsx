@@ -14,12 +14,11 @@ import { createBrowserClient, createServerClient } from '@supabase/auth-helpers-
 
 import styles from "./tailwind.css"
 import { useEffect, useState } from 'react'
-import Nav from './components/Nav'
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Seattle Orcats" },
+    { name: "description", content: "Ultimate frisbee team based in the greater Seattle area." },
   ];
 };
 

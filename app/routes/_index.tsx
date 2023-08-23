@@ -45,7 +45,9 @@ export default function Index() {
     <div className="mx-auto w-1/2 max-w-[600px] max-lg:w-5/6 font-['owners-xwide']">
       <img src={OrcatsLogo} alt="A logo depicting a cat and orca hybrid" />
       <h1 className="font-bold text-center text-6xl">orcats</h1>
-      <ul className="text-center my-4">
+      <h2 className="font-bold italic text-center text-xl">ultimate</h2>
+      <h3 className="text-center font-bold pt-10">capsizing a tournament near you</h3>
+      <ul className="text-center">
         <li>USAU Washington Sectionals - September 9-10, 2023</li>
       </ul>
     </div>
